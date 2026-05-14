@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Perfil - Marciel de Sousa Barbosa</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *{ margin:0; padding:0; box-sizing:border-box; font-family:'Inter', sans-serif; }
+    body{ background:#f5f7fb; color:#1e293b; padding: 20px; }
+    header{ width:100%; background:#0f172a; padding:20px 8%; display:flex; justify-content:space-between; align-items:center; border-radius: 10px; margin-bottom: 30px;}
+    .logo{ color: #ff0000; font-size:24px; font-weight:700; text-decoration:none; }
+    nav a{ color:#fff; text-decoration:none; font-weight:500; }
+    .container { max-width: 1000px; margin: auto; }
+    .profile-grid { display: grid; grid-template-columns: 1fr 2fr; gap: 30px; }
+    .profile-card, .info-details { background: white; padding: 30px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+    .profile-card { text-align: center; }
+    .profile-card img { width: 150px; height: 150px; border-radius: 50%; object-fit: cover; border: 4px solid #2563eb; }
+    h2 { color: #0f172a; margin-bottom: 20px; border-bottom: 2px solid #2563eb; display: inline-block; }
+    .info-list { list-style: none; }
+    .info-list li { margin-bottom: 15px; }
+    .info-list strong { color: #2563eb; width: 120px; display: inline-block; }
+    .tag { background: #e2e8f0; padding: 5px 12px; border-radius: 20px; font-size: 14px; margin: 5px 5px 0 0; display: inline-block; }
+    .btn-back { display: inline-block; margin-top: 20px; padding: 10px 20px; background: #0f172a; color: white; text-decoration: none; border-radius: 8px; }
+    @media(max-width: 768px) { .profile-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="index.html" class="logo">MARCIEL</a>
+    <nav><a href="index.html">← VOLTAR</a></nav>
+  </header>
+
+  <main class="container">
+    <div class="profile-grid">
+      <aside class="profile-card">
+        <img src="https://i.ibb.co/DHYnnrDM/foto.jpg" alt="Foto">
+        <h3>Marciel Barbosa</h3>
+        <p>Estudante de ADS</p>
+      </aside>
+
+      <section class="info-details">
+        <h2>Dados Pessoais</h2>
+        <ul class="info-list">
+          <li><strong>Cidade:</strong> Acauã - Piauí</li>
+          <li><strong>E-mail:</strong> marcieldesousabarbosa@gmail.com</li>
+          <li><strong>Formação:</strong> Estudante de Análise e Desenvolvimento de Sistemas</li>
+          <li><strong>IDADE:</strong>17 ANOS</li>
+        </ul>
+
+        <h2 style="margin-top: 30px;">Habilidades</h2>
+        <div>
+          <span class="tag">HTML5 / CSS3</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">UI/UX Design</span>
+        </div>
+
+        <a href="index.html" class="btn-back">Voltar para Home</a>
+      </section>
+    </div>
+  </main>
+
+</body>
+</html>
